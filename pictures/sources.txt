@@ -1,0 +1,9 @@
+hotel-room1.jpg - http://www.wretreatbali.com/rooms
+
+img1.jpg = https://www.google.com/maps/place/Double-Six+Luxury+Hotel/@-8.6964626,115.1611037,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMKLxaQxpCae2Zh0b4UpK87i_LlfQn7wD3cCqEA!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMKLxaQxpCae2Zh0b4UpK87i_LlfQn7wD3cCqEA%3Dw203-h135-k-no!7i2126!8i1417!4m10!1m2!2m1!1shotel!3m6!1s0x0:0xa4fe8766dd851be0!5m1!1s2018-05-27!8m2!3d-8.6964187!4d115.1612221
+
+img2.jpg = https://www.google.com/maps/place/Double-Six+Luxury+Hotel/@-8.6964193,115.1612217,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPNdI7DH9cbG5KLBIQNPo4WTna4iAqPVbhb3CRc!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPNdI7DH9cbG5KLBIQNPo4WTna4iAqPVbhb3CRc%3Dw203-h114-k-no!7i5760!8i3240!4m10!1m2!2m1!1shotel!3m6!1s0x0:0xa4fe8766dd851be0!5m1!1s2018-05-27!8m2!3d-8.6964187!4d115.1612221
+
+img3.jpg = https://www.google.com/maps/place/Double-Six+Luxury+Hotel/@-8.4095178,115.188916,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOcNXZynmfNm7puNtgp1rlT66MjMtARas8XUhwf!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOcNXZynmfNm7puNtgp1rlT66MjMtARas8XUhwf%3Dw203-h135-k-no!7i4896!8i3264!4m10!1m2!2m1!1shotel!3m6!1s0x0:0xa4fe8766dd851be0!5m1!1s2018-05-27!8m2!3d-8.6964187!4d115.1612221
+
+img4.jpg = http://mavibalirentals.com/five-fantastic-fun-finds-near-seminyak/
