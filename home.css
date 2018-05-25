@@ -1,7 +1,8 @@
 body
 {
 	margin: 0 auto;
-	font-family: arial;
+	font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .header
@@ -10,8 +11,9 @@ body
 	margin:0;
 	padding:0;
 	height:90px;
-	position: fixed;
-	background-color: rgb(75,75,75);
+	background-color: rgb(75,75,75,0.3);
+	position: absolute;
+	/*background-color: rgb(75,75,75);*/
 }
 
 .logo
@@ -21,12 +23,29 @@ body
 	width:185px;
 	display:inline-block;
 	vertical-align: top;
+	padding:15px;
 }
 
 .logo img
 {
 	width:100%;
 	height:auto;
+	opacity: 1;
+}
+
+.logo img:hover{
+	opacity: 0.9;
+}
+
+.navbar{
+	display:flex;
+	align-items: : flex-end;
+}
+
+.navs{
+	display: inline-block;
+	text-align: right;
+	float:right;
 }
 
 .nav 
@@ -34,16 +53,11 @@ body
 	display: inline-block;
 	color:white;
 	vertical-align: top;
-	padding:15px;
-	padding-top:20px;
-	padding-left:10px;
-	padding-right: 10px;
-	margin:15px;
+	padding:35px;
 	position:relative;
-	width:125px;
+	min-width:125px;
 	text-align: center;
-	float:right;
-	height: 30px;
+	height: 20px;
 }
 
 .nav a
@@ -52,25 +66,203 @@ body
 	text-decoration: none;
 }
 
-.nav a:hover{
-	font-weight:600;
-}
-
-#rightmostnav
+.nav:hover
 {
-	margin-right:45px;
+	background-color: rgba(75,75,75,0.5);
 }
 
-.content{
+.nav a:hover{
+
+}
+
+.nav-dropdown a{
+	display: inline-block;
+	color:white;
+	vertical-align: top;
+	padding:35px;
+	position:relative;
+	min-width:125px;
+	text-align: center;
+	height: 20px;
+	text-decoration: none;
+}
+
+.nav-dropdown:hover{
+	background-color: rgba(75,75,75,0.7);
+}
+
+.dropdown-content{
+	display: none;
+    position: absolute;
+    background-color: rgba(75,75,75,0.7);
+    min-width: 125px;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+	color:white;
+	padding:35px;
+	text-decoration: none;
+    display: block;
+    min-width: 125px;
+}
+
+.dropdown-content a:hover{
+	background-color: rgba(75,75,75,0.5);
+}
+
+.nav-dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.icon{
+	display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .navs {display: none;}
+  .icon {
+    float: right;
+    display: inline-block;
+  }
+
+  .icon img{
+  	width: 50px;
+  	height: 50px;
+  	padding:15px;
+  	text-align: center;
+  	position: relative;
+  }
+
+  .nav.responsive{
+  	position: relative;
+  }
+
+  .navbar{
+  	display: block;
+  	text-align: right;
+  }
+}
+
+
+.content1{
+	background-color: rgb(75,75,75);
 }
 
 #img1{
 	width: 100%;
+	background-image: url("pictures/img2.png");
 	background-color: rgb(75,75,75);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
 }
 
 #img1 img{
 	width:100%;
+	
+}
+
+#img2{
+	width: 100%;
+	background-image: url("pictures/img1.png");
+	background-color: rgb(75,75,75);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+	display: none;
+}
+
+#img3{
+	width: 100%;
+	background-image: url("pictures/img5.jpg");
+	background-color: rgb(75,75,75);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+	display: none;
+}
+
+#slide3{
+	color: rgb(75,75,75);
+}
+
+.text-image{
+	padding: 75px;
+	padding-top: 250px;
+	color: white;
+}
+
+.text-image h1{
+	margin-bottom: 5px;
+}
+
+.text-image p{
+	margin-top: 5px;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+
+
+.text-image a{
+	text-decoration: none;
+}
+
+
+
+.button{
+	margin-top: 5px;
+	width:115px;
+	height: 20px;
+	background-color:#3ACBC8; 
+	padding: 15px;
+	color: white;
+	font-size: 1em;
+}
+
+
+.button:hover{
+	background-color: #0ABBB5;
+}
+
+.slider-nav{
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.box{
+	width: 3em;
+	height: 3em;
+	margin: 5px;
+	background-color: #3ACBC8;
+	display: inline-block;
+	color: white;
+}
+
+.slider-nav a{
+	text-decoration: none;
+    display: inline-block;
+    padding: 16px 20px;
+    margin: 5px;
+    color: white;
+    background-color: #3ACBC8;
+    opacity: 0.85;
+}
+
+.slider-nav a:hover{
+	background-color: #0ABBB5;
+	opacity: 0.95;
+}
+
+#right{
+	margin-right: 2em;
 }
 
 #divider1{
@@ -86,8 +278,18 @@ body
 {
 	margin-top: 0px;
 	padding: 15px;
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-right: 25px;
+}
+
+.greeting{
+	text-align: center;
+	color: rgb(75,75,75);
+}
+
+.greeting hr{
+	width: 80%;
+	background-color: rgb(75,75,75);
 }
 
 #infos
@@ -95,11 +297,12 @@ body
 	padding:50px;
 	display:flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .items
 {
-	width:450px;
+	width:400px;
 	height: 400px;
 	display: inline-block;
 	text-align: center;
@@ -121,6 +324,7 @@ body
 	padding:35px;
 	padding-top: 0;
 }
+
 
 
 .footer

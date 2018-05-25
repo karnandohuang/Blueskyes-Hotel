@@ -2,7 +2,10 @@
 <html>
 <head>
 	<title>Blueskyes Hotel</title>
+	<link rel="icon" type="image/png" href="pictures/bluesky-logo1.png">
 	<link rel="stylesheet" type="text/css" href="home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -10,46 +13,78 @@
 	<div class="header">
 	
 		<div class="logo">
-			<img src="pictures/bluesky-logo.png">
+			<a href="home.html"><img src="pictures/bluesky-logo.png"></a>
 		</div>
 
-		
-		<div class="nav" id="rightmostnav">
-			<a href="#">
-				REGISTER
-			</a>
+		<div class="navs" id="nav">
+			<div class="navbar">
+				<a href="#"><div class="nav">HOME</div></a>
+				<div class="nav-dropdown">
+					<a href="#">INFORMATION</a>
+					<div class="dropdown-content">
+						<a href="#">ABC</a>
+						<a href="#">DEF</a>
+					</div>
+				</div>
+				<a href="#"><div class="nav">ABOUT US</div></a>
+				<a href="#"><div class="nav">REGISTER</div></a>
+			</div>
 		</div>
-		<div class="nav">
-			<a href="#">
-				ABOUT US
-			</a>
+		<div class="icon">
+			<a href="javascript:void(0);" onclick="navFunction()" class="mobile-menu"><img src="pictures/mobile-menu.png"></i></a>
 		</div>
-		<div class="nav">
-			<a href="#">
-				INFORMATION
-			</a>
-		</div>
-		<div class="nav">
-			<a href="#">
-				HOME
-			</a>
-		</div>
+
 
 	</div>
 
-	<div class="content">
+	<div class="content1">
 		<div id="img1">
-			<img src="pictures/img2.png">
+			<div class="text-image">
+				<h1>BEACH VIEW AND SUNSET</h1>
+				<p>Welcome to Bali's Best Hotel</p>
+				<a href=""><div class="button">LEARN MORE</div></a>
+			</div>
+			<div class="slider-nav">
+				<a href="#" class="previous">&#8249;</a>
+				<a href="#" class="next" id="right">&#8250;</a>
+			</div>
 		</div>
+		<div id="img2">
+			<div class="text-image">
+				<h1>YOUR BEST MOMENTS</h1>
+				<p>Welcome to Bali's Best Hotel</p>
+				<a href=""><div class="button">LEARN MORE</div></a>
+			</div>
+			<div class="slider-nav">
+				<a class="previous">&#8249;</a>
+				<a class="next" id="right">&#8250;</a>
+			</div>
+		</div>
+		<div id="img3">
+			<div class="text-image" id="slide3">
+				<h1>FIVE STAR ACCOMODATION</h1>
+				<p>Welcome to Bali's Best Hotel</p>
+				<a href=""><div class="button" id="btn3">LEARN MORE</div></a>
+			</div>
+			<div class="slider-nav">
+				<a href="#" class="previous" >&#8249;</a>
+				<a href="#" class="next" id="right">&#8250;</a>
+			</div>
+		</div>
+	</div>
 
+	<div class="content2">
 		<div id="divider1">
-			<p>	
-			Jalan Pantai Double Six, No. 67, Seminyak, Kuta, Bali
-			</p>
+			<p>	Jalan Pantai Double Six, No. 67, Seminyak, Kuta, Bali</p>
 		</div>
+		<div class="greeting">
+			<h2>Welcome</h2>
+			<hr>
+		</div>
+	</div>
+<!-- https://www.downtowngrand.com/ -->
 
-		<div>
-			
+	<div class="content3">
 		<div id="infos">
 			<div class="items">
 				<span>ROOM</span><br>
@@ -70,18 +105,18 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus blandit massa nec pharetra. In sed ipsum felis. Sed quis neque rutrum eros vulputate euismod sit amet vel orci. Nunc tristique ex vel erat ullamcorper, non commodo neque hendrerit.</p>
 			</div>
 		</div>
-		</div>
-
-
 	</div>
 
 
-<div class="footer">
-	<img src="pictures/bluesky-logo.png"><br>
-	<p>
-	BLUESKYES 2018 ALL RIGHTS RESERVED
-	</p>
-</div>
+	
+
+
+	<div class="footer">
+		<img src="pictures/bluesky-logo.png"><br>
+		<p>
+		BLUESKYES 2018 ALL RIGHTS RESERVED
+		</p>
+	</div>
 
 </body>
 </html>
