@@ -9,38 +9,28 @@
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
-
 	<div class="header">
-	
-		<div class="logo">
-			<a href="home.html"><img src="pictures/bluesky-logo.png"></a>
+		<div class="nav-left">
+			<a href="home.html" id="logo"><img src="pictures/bluesky-logo.png"></a>
 		</div>
-
-		<div class="navs" id="nav">
-			<div class="navbar">
-				<a href="#"><div class="nav">HOME</div></a>
-				<div class="nav-dropdown">
-					<a href="#">INFORMATION</a>
-					<div class="dropdown-content">
-						<a href="#">ABC</a>
-						<a href="#">DEF</a>
-					</div>
+		<ul>
+			<li class="nav-right"><a href="#">HOME</a></li>
+			<li class="dropdown nav-right">
+				<a href="#" class="dropbtn">INFORMATION</a>
+				<div class="dropdown-content">
+					<a href="#">GALLERY</a>
+					<a href="#">PROMOTIONS</a>
 				</div>
-				<a href="#"><div class="nav">ABOUT US</div></a>
-				<a href="#"><div class="nav">REGISTER</div></a>
-			</div>
-		</div>
-		<div class="icon">
-			<a href="javascript:void(0);" onclick="navFunction()" class="mobile-menu"><img src="pictures/mobile-menu.png"></i></a>
-		</div>
-
-
+			</li>
+			<li class="nav-right"><a href="#">ABOUT US</a></li>
+			<li class="nav-right"><a href="#">REGISTER</a></li>
+		</ul>
 	</div>
 
 	<div class="content1">
-		<div id="img1">
+		<div class="image-slider" id="img1">
 			<div class="text-image">
-				<h1>BEACH VIEW AND SUNSET</h1>
+				<h1>BEACH VIEW AND SUNSETS</h1>
 				<p>Welcome to Bali's Best Hotel</p>
 				<a href=""><div class="button">LEARN MORE</div></a>
 			</div>
@@ -49,7 +39,7 @@
 				<a href="#" class="next" id="right">&#8250;</a>
 			</div>
 		</div>
-		<div id="img2">
+		<div class="image-slider" id="img2">
 			<div class="text-image">
 				<h1>YOUR BEST MOMENTS</h1>
 				<p>Welcome to Bali's Best Hotel</p>
@@ -60,7 +50,7 @@
 				<a class="next" id="right">&#8250;</a>
 			</div>
 		</div>
-		<div id="img3">
+		<div class="image-slider" id="img3">
 			<div class="text-image" id="slide3">
 				<h1>FIVE STAR ACCOMODATION</h1>
 				<p>Welcome to Bali's Best Hotel</p>
@@ -107,16 +97,11 @@
 		</div>
 	</div>
 
-
-	
-
-
 	<div class="footer">
 		<img src="pictures/bluesky-logo.png"><br>
 		<p>
-		BLUESKYES 2018 ALL RIGHTS RESERVED
+		© BLUESKYES 2018 ALL RIGHTS RESERVED<br>By Karnando, Heryadi, Firza, Andika
 		</p>
 	</div>
-
 </body>
 </html>

@@ -2,7 +2,6 @@ body
 {
 	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .header
@@ -11,109 +10,83 @@ body
 	margin:0;
 	padding:0;
 	height:90px;
-	background-color: rgb(75,75,75,0.3);
+	background-color: rgb(75,75,75,0.5);
 	position: absolute;
-	/*background-color: rgb(75,75,75);*/
 }
 
-.logo
-{
-
-	margin-left:35px;
-	width:185px;
-	display:inline-block;
-	vertical-align: top;
-	padding:15px;
+.header ul{
+	padding:0;
+	margin:0;
+	margin-right:50px; 
+	height: 90px;
+	display: inline-block;
+	float: right;
 }
 
-.logo img
+.header #logo img
 {
-	width:100%;
+	width:180px;
 	height:auto;
 	opacity: 1;
 }
 
-.logo img:hover{
+.header #logo a{
+	padding: 0;
+	margin:0;
+}
+
+.header .nav-left{
+	margin-top: 15px;
+	display: inline-block;
+	margin-left: 50px;
+	text-align: center;
+}
+
+.header #logo img:hover{
 	opacity: 0.9;
 }
 
-.navbar{
-	display:flex;
-	align-items: : flex-end;
-}
-
-.navs{
+.header li{
 	display: inline-block;
-	text-align: right;
-	float:right;
+	vertical-align: middle;
 }
 
-.nav 
-{
-	display: inline-block;
-	color:white;
-	vertical-align: top;
-	padding:35px;
-	position:relative;
-	min-width:125px;
-	text-align: center;
-	height: 20px;
-}
-
-.nav a
-{
-	color:white;
+.header li a{
 	text-decoration: none;
-}
-
-.nav:hover
-{
-	background-color: rgba(75,75,75,0.5);
-}
-
-.nav a:hover{
-
-}
-
-.nav-dropdown a{
-	display: inline-block;
-	color:white;
-	vertical-align: top;
-	padding:35px;
-	position:relative;
-	min-width:125px;
+	color: white;
+	padding:38px 42px;
 	text-align: center;
-	height: 20px;
-	text-decoration: none;
 }
 
-.nav-dropdown:hover{
-	background-color: rgba(75,75,75,0.7);
+
+.header .nav-right a:hover{
+	background-color: rgba(75,75,75,0.3);
 }
 
-.dropdown-content{
+.header .nav-right{
+/*	float:right;*/
+	line-height: 85px;
+}
+
+.header .dropdown-content{
 	display: none;
-    position: absolute;
-    background-color: rgba(75,75,75,0.7);
-    min-width: 125px;
-    margin: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+	margin-top: 5px;
+	position: absolute;
+	background-color: rgba(75,75,75,0.4);
 }
 
-.dropdown-content a{
-	color:white;
-	padding:35px;
-	text-decoration: none;
-    display: block;
-    min-width: 125px;
+.header .dropdown-content a{
+	
+	/*background-color: rgba(75,75,75,0.6);*/
+	padding:20px 42.5px;
+	display: block;
 }
 
-.dropdown-content a:hover{
-	background-color: rgba(75,75,75,0.5);
+.header .dropdown-content a:hover{
+	background-color: rgba(75,75,75,0.8);
 }
 
-.nav-dropdown:hover .dropdown-content{
+.header .dropdown:hover .dropdown-content{
 	display: block;
 }
 
@@ -121,39 +94,12 @@ body
 	display: none;
 }
 
-@media screen and (max-width: 1050px) {
-  .navs {display: none;}
-  .icon {
-    float: right;
-    display: inline-block;
-  }
-
-  .icon img{
-  	width: 50px;
-  	height: 50px;
-  	padding:15px;
-  	text-align: center;
-  	position: relative;
-  }
-
-  .nav.responsive{
-  	position: relative;
-  }
-
-  .navbar{
-  	display: block;
-  	text-align: right;
-  }
-}
-
-
 .content1{
 	background-color: rgb(75,75,75);
 }
 
-#img1{
+.image-slider{
 	width: 100%;
-	background-image: url("pictures/img2.png");
 	background-color: rgb(75,75,75);
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -161,31 +107,17 @@ body
     height: 600px;
 }
 
-#img1 img{
-	width:100%;
-	
+#img1{
+	background-image: url("pictures/img2.png");
 }
 
 #img2{
-	width: 100%;
+
 	background-image: url("pictures/img1.png");
-	background-color: rgb(75,75,75);
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 600px;
-	display: none;
 }
 
 #img3{
-	width: 100%;
 	background-image: url("pictures/img5.jpg");
-	background-color: rgb(75,75,75);
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 600px;
-	display: none;
 }
 
 #slide3{
@@ -208,13 +140,9 @@ body
 	margin-bottom: 10px;
 }
 
-
-
 .text-image a{
 	text-decoration: none;
 }
-
-
 
 .button{
 	margin-top: 5px;
@@ -225,7 +153,6 @@ body
 	color: white;
 	font-size: 1em;
 }
-
 
 .button:hover{
 	background-color: #0ABBB5;
@@ -268,7 +195,7 @@ body
 #divider1{
 	color:white;
 	text-align: right;
-	background-color: rgb(75,75,75);
+	background-color: rgb(100,100,100);
 	height: 50px;
 	padding:0;
 	margin:0;
@@ -289,12 +216,13 @@ body
 
 .greeting hr{
 	width: 80%;
-	background-color: rgb(75,75,75);
+	background-color: rgb(120,120,120);
 }
 
 #infos
 {
 	padding:50px;
+	padding-top: 30px;
 	display:flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -325,14 +253,12 @@ body
 	padding-top: 0;
 }
 
-
-
 .footer
 {
 	text-align: center;
 	vertical-align: bottom;
 	background-color: rgb(75,75,75);
-	height: 100px;
+	height: 115px;
 	width:100%;
 }
 
@@ -340,12 +266,142 @@ body
 {
 	width:100px;
 	padding:5px;
+	padding-top:15px;
 }
 
 .footer p
 {
 	font-size:15px;
 	margin-top: 0;
-	color:white;	
+	color:white;
+	padding-bottom: 15px;
 }
 
+@media screen and (max-width: 1000px) {
+	.header li a{
+		padding:20px 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.header .dropdown-content a{
+		padding:20px 20px;
+	}
+}
+
+
+@media screen and (max-width: 850px) {
+
+	.header{
+		height: 230px;
+	}
+
+
+	.header ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		width: 100%;
+
+	}
+
+	.header li{
+		display: block;
+		width: 100%;
+	}
+
+	.nav-right{
+		display: none;
+	}
+
+	.header .nav-left{
+		width: 100%;
+		padding:0;
+		margin:0;
+		margin-top: 10px;
+	}
+
+	#logo{
+		padding-top:10px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 10px;
+		height: 50px;
+	}
+
+	#logo img
+	{
+		width:150px;
+		height:auto;
+		opacity: 1;
+	}
+
+	.header li a{
+		padding:5px;
+		height: 30px;
+		padding-left: 0;
+		padding-right: 0;
+		display: block;
+		width: 100%;
+		line-height: 30px;
+	}
+
+	.nav-right li a:hover{
+		background-color: rgba(75,75,75,0.3)
+	}
+
+	#icon img{
+		width:40px;
+		height: 40px;
+		display: none;
+	}
+
+	.header .dropdown-content{
+		margin-top: 0px;
+		width:100%;
+	}
+
+	.header .dropdown-content a{
+		background-color: rgba(75,75,75,1);
+		padding:5px;
+		height: 30px;
+		width: 100%;
+	}
+
+	.header .dropdown-content a:hover{
+		background-color: rgba(80,80,80,1);
+	}
+}
+
+@media screen and (max-width: 620px) {
+
+.slider-nav{
+	margin-top: 20px;
+}
+#divider1{
+	height: 60px;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+
+.text-image{
+	padding-bottom: 40px;
+}
+
+.slider-nav{
+	margin-top: 10px;
+}
+
+.items img{
+	height: 150px;
+	width: 300px;
+}
+
+.image-slider{
+	height: 650px;
+}
+
+
+}
