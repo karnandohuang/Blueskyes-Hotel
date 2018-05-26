@@ -1,0 +1,53 @@
+.image-slider{
+	height: 350px;	
+}
+
+.text-image{
+	padding-top: 125px;
+	padding-bottom: 30px;
+}
+
+#divider1{
+	height: 25px;
+}
+
+@media screen and (max-width: 850px) {
+	.image-slider{
+	height: 350px;	
+	}
+
+	.text-image{
+		padding-top: 100px;
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.image-slider{
+	height: 400px;	
+	}
+
+	.text-image{
+		padding-top: 100px;
+		padding-bottom: 20px;
+	}
+
+	
+}
+
+@media screen and (max-width: 400px){
+
+	.text-image{
+		padding-top: 90px;
+	}
+
+	.button{
+		width:90px;
+		height: 15px;
+		padding: 7.5px;
+		font-size: 0.75em;
+		text-align: center;
+	}
+
+
+}
